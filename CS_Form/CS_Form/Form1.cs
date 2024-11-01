@@ -16,35 +16,58 @@ namespace CS_Form
         {
             InitializeComponent();
 
-            TestButton testButton = new TestButton(0,0,100,100);
-            Controls.Add(testButton);
+            for (int i = 0; i < 10; i++)
+            {
+                TestButton testButton = new TestButton(i,(i % 5) * 100, (i / 5) * 100, 100, 100);
+                Controls.Add(testButton);
+            }
 
-            TestButton testButton2 = new TestButton(100,100,100,100);
-            Controls.Add(testButton2);
+            //for (int i = 0; i < 10; i++)
+            //{
 
-            TestButton testButton3 = new TestButton(100, 0, 100, 100);
-            Controls.Add(testButton3);
+            //  TestButton testButton= new TestButton(i*100, 0, 100, 100);
+            //  Controls.Add(testButton); ⇦横一列
 
-            TestButton testButton4 = new TestButton(200, 0, 100, 100);
-            Controls.Add(testButton4);
+            //}
 
-            TestButton testButton5 = new TestButton(300, 0, 100, 100);
-            Controls.Add(testButton5);
+            //for(int i = 0; i < 10; i++)
+            //{
 
-            TestButton testButton6 = new TestButton(400, 0, 100, 100);
-            Controls.Add(testButton6);
+            // TestButton testButton = new TestButton((i % 3) * 100,(i / 3) * 100,100,100);
+            // Controls.Add(testButton);　⇦３個ごとで改行
 
-            TestButton testButton7 = new TestButton(0, 100, 100, 100);
-            Controls.Add(testButton7);
+            //}
 
-            TestButton testButton8 = new TestButton(200, 100, 100, 100);
-            Controls.Add(testButton8);
 
-            TestButton testButton9 = new TestButton(300, 100, 100, 100);
-            Controls.Add(testButton9);
+            //TestButton testButton = new TestButton(0,0,100,100);
+            //Controls.Add(testButton);
 
-            TestButton testButton10 = new TestButton(400, 100, 100, 100);
-            Controls.Add(testButton10);
+            //TestButton testButton2 = new TestButton(100,100,100,100);
+            //Controls.Add(testButton2);
+
+            //TestButton testButton3 = new TestButton(100, 0, 100, 100);
+            //Controls.Add(testButton3);
+
+            //TestButton testButton4 = new TestButton(200, 0, 100, 100);
+            //Controls.Add(testButton4);
+
+            //TestButton testButton5 = new TestButton(300, 0, 100, 100);
+            //Controls.Add(testButton5);
+
+            //TestButton testButton6 = new TestButton(400, 0, 100, 100);
+            //Controls.Add(testButton6);
+
+            //TestButton testButton7 = new TestButton(0, 100, 100, 100);
+            //Controls.Add(testButton7);
+
+            //TestButton testButton8 = new TestButton(200, 100, 100, 100);
+            //Controls.Add(testButton8);
+
+            //TestButton testButton9 = new TestButton(300, 100, 100, 100);
+            //Controls.Add(testButton9);
+
+            //TestButton testButton10 = new TestButton(400, 100, 100, 100);
+            //Controls.Add(testButton10);
         }
     }
 }
