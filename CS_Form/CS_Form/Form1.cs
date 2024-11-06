@@ -22,6 +22,15 @@ namespace CS_Form
                 Controls.Add(testButton);
             }
 
+            TestLabel testlabel =
+                new TestLabel("らべるです。",10, 300, 100, 500);
+            Controls.Add(testlabel);
+
+            //Label label = new Label();
+            //label.Location = new Point(30, 400);
+            //label.Text = "らべるです。";
+            //Controls.Add(label);
+
             //for (int i = 0; i < 10; i++)
             //{
 
