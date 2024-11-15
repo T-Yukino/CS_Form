@@ -24,6 +24,8 @@ namespace CS_Form
                 Controls.Add(testButton);
             }
 
+
+
             _testlabel=new TestLabel("らべるです。",10, 300, 100, 500);
             Controls.Add(_testlabel);
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -26,9 +27,48 @@ namespace CS_Form
             Click += onclick;
 
             //ボタン内に文字を表示
-
             Text =id.ToString();
-            
+            if (id == 1)
+            {
+                Text = "あ";
+            }
+            if (id == 2)
+            {
+                Text = "い";
+            }
+            if (id == 3)
+            {
+                Text = "う";
+            }
+            if (id == 4)
+            {
+                Text = "え";
+            }
+            if (id == 5)
+            {
+                Text = "お";
+            }
+            if (id == 6)
+            {
+                Text = "か";
+            }
+            if (id == 7)
+            {
+                Text = "き";
+            }
+            if (id == 8)
+            {
+                Text = "く";
+            }
+            if (id == 9)
+            {
+                Text = "け";
+            }
+            if (id == 0)
+            {
+                Text = "こ";
+            }
+
             //ボタンの位置
             Location = new Point(x,y);
 
