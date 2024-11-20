@@ -21,13 +21,18 @@ namespace CS_Form
             Location = new Point(x, y);
 
             //ラベルのサイズ
-            Size = new Size(width, height);
-
-
-            
-            
+            Size = new Size(width, height);          
             
 
+        }
+
+        public string TextReplacement(string str)
+        {
+            string temp = Text;
+
+            Text = str;
+
+            return temp;
         }
 
         /// <summary>

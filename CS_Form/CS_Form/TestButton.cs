@@ -77,9 +77,19 @@ namespace CS_Form
 
         }
 
+        /// <summary>
+        /// ボタンをクリックした際の処理を記述する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="s"></param>
         public void onclick(object sender,EventArgs s)
         {
+            string t = _form1.ButtonLabelReplacement(Text);
+
+            Text = t;
+
             _form1.LabelTextUpdate(Text);
+
         }
 
     }

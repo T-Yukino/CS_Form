@@ -107,5 +107,12 @@ namespace CS_Form
         {
             _testlabel.TextUpdate(str);
         }
+
+        public string ButtonLabelReplacement(string str)
+        {
+            string s = _TextBox.TextReplacement(str);
+
+            return s;
+        }
     }
 }
