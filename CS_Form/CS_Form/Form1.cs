@@ -12,11 +12,29 @@ namespace CS_Form
 {
     public partial class Form1 : Form
     {
+
         TestLabel _testlabel;
+
+        TestTextBox _TextBox;
 
         public Form1()
         {
+            //コンポーネントの初期化
             InitializeComponent();
+
+            string[] strs =
+            {
+                "あか",
+                "あお",
+                "みどり",
+                "きいろ",
+                "むらさき",
+                "くろ",
+                "しろ",
+                "ぴんく",
+                "ちゃいろ",
+                "おれんじ"
+            };
 
             for (int i = 0; i < 10; i++)
             {
@@ -25,9 +43,12 @@ namespace CS_Form
             }
 
 
-
+            //1ラベルの作成
             _testlabel=new TestLabel("らべるです。",10, 300, 100, 500);
             Controls.Add(_testlabel);
+
+            _TextBox = new TestTextBox("てきすとぼっくすです", 10, 400, 500, 100);
+            Controls.Add(_TextBox);
 
             //Label label = new Label();
             //label.Location = new Point(30, 400);

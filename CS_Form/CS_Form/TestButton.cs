@@ -27,7 +27,7 @@ namespace CS_Form
             Click += onclick;
 
             //ボタン内に文字を表示
-            Text =id.ToString();
+            Text = id.ToString();
             if (id == 1)
             {
                 Text = "あ";
